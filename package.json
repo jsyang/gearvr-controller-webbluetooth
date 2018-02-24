@@ -1,0 +1,17 @@
+{
+  "name": "gearvr-controller-webbluetooth",
+  "version": "0.1",
+  "author": {
+    "name": "jsyang.ca@gmail.com",
+    "url": "http://jsyang.ca/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jsyang/gearvr-controller-webbluetooth.git"
+  },
+  "main": "ControllerBluetoothInterface.js",
+  "devDependencies": {
+    "ahrs": "^1.1.6",
+    "three": "^0.90.0"
+  }
+}
