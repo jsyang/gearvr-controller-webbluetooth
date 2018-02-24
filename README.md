@@ -1,6 +1,6 @@
 # gearvr-controller-webbluetooth
 
-[Gear VR controller web bluetooth demo.](http://jsyang.ca/gearvr-controller-webbluetooth)
+[Gear VR controller web bluetooth demo.](http://jsyang.ca/gearvr-controller-webbluetooth/index.html)
 
 This demo only works in [browsers supporting Web Bluetooth](https://caniuse.com/#feat=web-bluetooth). As of Feb 2018, this just means Chrome. 
 
