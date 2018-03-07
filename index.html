@@ -17,6 +17,23 @@
         font-family: sans-serif;
         font-size: 0.7em;
     }
+
+    #webbluetoothNotSupported {
+        font-family: sans-serif;
+        display: none;
+        transition: opacity 0.5s;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        padding: 1em;
+        background: rgba(255, 255, 255, 0.7);
+    }
+
+    #webbluetoothNotSupported.show {
+        display: block;
+    }
 </style>
 <body style="padding:0;margin: 0; background: rgb(64,64,64)">
 <div id="deviceActions">
@@ -34,17 +51,26 @@
         Messages about the device appear here.
     </div>
 </div>
+<div id="webbluetoothNotSupported">
+    Sorry, your browser cannot run this demo unless it supports the
+    <a href="https://www.chromestatus.com/feature/5264933985976320">Web Bluetooth API</a>.<br><br>
+    If you're running a recent version of Chrome that supports this API but has it disabled, you can
+    go to <code>chrome://flags/#enable-experimental-web-platform-features</code> and tick the
+    "Experimental Web Platform features" to enable it.
+</div>
 </body>
+<!--<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>-->
 <!--<script src="node_modules/three/build/three.min.js"></script>-->
 <!--<script src="node_modules/three/examples/js/loaders/MTLLoader.js"></script>-->
 <!--<script src="node_modules/three/examples/js/loaders/OBJLoader.js"></script>-->
 <!--<script src="node_modules/ahrs/build/www-ahrs.js"></script>-->
 
+<script src="dist/babel.min.js"></script>
 <script src="dist/three.min.js"></script>
 <script src="dist/MTLLoader.js"></script>
 <script src="dist/OBJLoader.js"></script>
 <script src="dist/www-ahrs.js"></script>
 
-<script src="ControllerBluetoothInterface.js"></script>
-<script src="ControllerDisplay.js"></script>
+<script type="text/babel" src="ControllerBluetoothInterface.js"></script>
+<script type="text/babel" src="ControllerDisplay.js"></script>
 </html>

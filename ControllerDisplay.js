@@ -68,15 +68,21 @@ class ControllerDisplay {
         mtlLoader.setPath(this.PATH);
         mtlLoader.load('gear_vr_controller.mtl', this.onMTLLoaded);
 
-        document.getElementById('deviceActions').addEventListener(
-            'change',
-            this.onSelectDeviceAction
-        );
+        if (navigator.bluetooth) {
+            document.getElementById('deviceActions').addEventListener(
+                'change',
+                this.onSelectDeviceAction
+            );
 
-        document.getElementById('deviceActionsButton').addEventListener(
-            'click',
-            this.onClickDeviceActionButton
-        );
+            document.getElementById('deviceActionsButton').addEventListener(
+                'click',
+                this.onClickDeviceActionButton
+            );
+
+        } else {
+
+            document.getElementById('webbluetoothNotSupported').classList.add('show');
+        }
 
         this.logElement = document.getElementById('deviceActionsLog');
     }
