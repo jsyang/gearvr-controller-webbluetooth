@@ -83,7 +83,7 @@ class ControllerBluetoothInterface {
         ) & 0x3FF;
 
         // com.samsung.android.app.vr.input.service/ui/c.class:L222
-        const timestamp = ((new Int32Array(buffer.slice(0, 4))[0]) & 0xFFFFFFFF) / 1000 * ControllerBluetoothInterface.TIMESTAMP_FACTOR;
+        const timestamp = ((new Int32Array(buffer.slice(0, 3))[0]) & 0xFFFFFFFF) / 1000 * ControllerBluetoothInterface.TIMESTAMP_FACTOR;
 
         // com.samsung.android.app.vr.input.service/ui/c.class:L222
         const temperature = eventData[57];
