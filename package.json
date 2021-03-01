@@ -12,6 +12,6 @@
   "main": "ControllerBluetoothInterface.js",
   "devDependencies": {
     "ahrs": "^1.1.6",
-    "three": "^0.90.0"
+    "three": "^0.125.0"
   }
 }
