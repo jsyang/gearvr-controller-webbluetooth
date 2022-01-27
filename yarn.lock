@@ -6,6 +6,6 @@ ahrs@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/ahrs/-/ahrs-1.1.6.tgz#1e4430510a99ff11b62fff22b049b49858d0f6dc"
 
-three@^0.90.0:
-  version "0.90.0"
-  resolved "https://registry.yarnpkg.com/three/-/three-0.90.0.tgz#be478e7c0f82c5ae742c197db1e38e58b6190d1b"
+three@^0.137.0:
+  version "0.137.0"
+  resolved "https://registry.yarnpkg.com/three/-/three-0.137.0.tgz#0ebd6ba66637a332c31f234bcdd35aeec071a6e3"
